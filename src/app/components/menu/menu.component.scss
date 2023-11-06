@@ -1,0 +1,22 @@
+* {margin: 0; padding: 0;}
+ion-menu {
+    ion-header {
+        ion-toolbar {
+            ion-title {
+
+            }
+        }
+    }
+    ion-content {
+        ion-list {
+            P {
+                padding: 5px;
+                text-align: center;
+                font-weight: bolder;
+            }
+            ion-item {
+
+            }
+        }
+    }
+}

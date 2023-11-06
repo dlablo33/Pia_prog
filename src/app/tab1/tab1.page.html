@@ -1,0 +1,37 @@
+<app-header [titulo]="'GAME STORE'"></app-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container class="carousel"
+
+  (slidechange)="swiperSlideChanged($event)"
+    [loop]="true"
+    [pagination]="true">
+
+    <swiper-slide><img class="img-carousel" src="assets/img/1.jpg" alt="1"></swiper-slide>
+    <swiper-slide><img class="img-carousel" src="assets/img/2.jpg" alt="2"></swiper-slide>
+    <swiper-slide><img class="img-carousel" src="assets/img/3.jpg" alt="3"></swiper-slide>
+
+  </swiper-container>
+
+  <ion-container class="art-destacado">
+    <p>ARTICULOS DESTACADOS</p>
+  </ion-container>
+
+  <ion-container class="ion__container-cards">
+
+    <ion-card>
+      <img alt="Rust Game" src="/assets/img/C3Rust.jpg"/>
+      <ion-card-header>
+        <ion-card-title>Rust</ion-card-title>
+        <ion-card-subtitle>31/08/23</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content class="precio">
+        <p>Precio: $2000</p>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-container>
+  <app-footer></app-footer>
+</ion-content>
+

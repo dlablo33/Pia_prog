@@ -1,0 +1,7 @@
+{
+  "name": "TiendaGamer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
