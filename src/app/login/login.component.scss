@@ -1,0 +1,25 @@
+button{
+    color: wheat;
+    background-color: blue;
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+/*Selector por ID*/
+#done{
+    color: black;
+    background-color: green;
+button{
+    background-color:crimson;
+    color: white; 
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+    margin-bottom: 7px;
+    border: 0px;
+    width: 150px;
+}
