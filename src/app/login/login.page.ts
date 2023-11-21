@@ -11,10 +11,12 @@ export class LoginPage implements OnInit {
 
   public email: any;
   public password: any;
+  
 
   constructor(
     public router: Router,
     public fireService: FireserviceService
+    
   ) { }
 
   ngOnInit() {
@@ -23,10 +25,10 @@ export class LoginPage implements OnInit {
   login(){
     this.fireService.login({email: this.email, password: this.password}).then(resp=>{
       console.log(resp);
+      this.router.navigateByUrl('tabs');
       if(resp.user?.uid){
         this.fireService.getDetails({uid: resp.user.uid}).subscribe(resp=>{
           console.log(resp);
-          alert("Bienvenido");
         }, err=>{
           console.log(err);
         });
@@ -34,9 +36,8 @@ export class LoginPage implements OnInit {
     }, err=>{
       alert(err.message);
     })
-    this.email = '';
-    this.password = '';
-    this.router.navigateByUrl('tabs');
+      this.email = '';
+      this.password = '';
   }
 
   signup(){
