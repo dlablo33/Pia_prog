@@ -5,5 +5,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-label>TAB1</ion-label>
+  <ion-card *ngFor="let producto of productos">
+    <ion-card-title>{{producto.title}}</ion-card-title>
+    <ion-card-content>
+      <div>
+        ${{producto.price}}
+      </div>
+      <div>
+        {{producto.description}}
+      </div>
+      <div>
+        <img src="{{producto.image}}" alt="product img">
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
