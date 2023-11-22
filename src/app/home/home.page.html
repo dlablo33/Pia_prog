@@ -6,7 +6,6 @@
   </ion-header>
   <ion-list>
     <ion-item routerLink="/login">Login</ion-item>
-    <ion-item routerLink="/tab1">Productos</ion-item>
   </ion-list>
   <ion-content></ion-content>
 </ion-menu>
@@ -19,5 +18,12 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">Pagina inicio (libre)</ion-content>
+  <ion-content class="ion-padding">
+    <h2>Aquí encontraras todo lo que necesitas y dentro de tu universidad!</h2>
+    <ion-img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?q=80&w=1911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></ion-img>
+    <h5>Encontraras ropa.</h5>
+    <ion-img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></ion-img>
+    <h5>Artículos de tecnología.</h5>
+    <h3 (click)="login()"><ion-text>Solo haz click aquí e ingresa</ion-text></h3>
+  </ion-content>
 </div>

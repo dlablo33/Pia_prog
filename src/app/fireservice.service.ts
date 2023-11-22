@@ -26,4 +26,16 @@ export class FireserviceService {
     getDetails(data){
       return this.firestore.collection("users").doc(data.uid).valueChanges();
     }
+
+    delete(data){
+      return this.firestore.collection("users").doc(data.uid).delete();
+    }
+
+    update(data){
+      return this.firestore.collection("users").doc(data.uid).set(data);
+    }
+
+    getAll(data){
+      return this.firestore.collection("users").snapshotChanges();
+    }
 }
