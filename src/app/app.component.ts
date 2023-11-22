@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
-import {register} from 'swiper/element/bundle';
-register();
+import { BrowserModule } from '@angular/platform-browser';
+import { IonicModule } from '@ionic/angular';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule} from '@angular/common/http';
+
+imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule]
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',

@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form">
+    
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]='email'></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]='password' type="password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)='login()' expand="block">Login</ion-button>
+    <br>
+
+    <h5 (click)='signup()'>¿Aún no tienes cuenta? <ion-text color="primary">registrate aquí!</ion-text></h5>
+    <ion-img src="https://media.istockphoto.com/id/1430739536/es/foto/felices-amigos-multirraciales-divirti%C3%A9ndose-juntos-caminando-por-la-calle-de-la-ciudad-grupo.webp?b=1&s=170667a&w=0&k=20&c=hPMBrc4pyTutMm2uIeFoCdfFOG5A0CQPg6ZNZMoaK9A="></ion-img>
+  </div>
+</ion-content>

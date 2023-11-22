@@ -74,9 +74,17 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+    /** ourColor **/
+    --ion-color-ourColor: #294792;
+    --ion-color-ourColor-rgb: 82, 96, 255;
+    --ion-color-ourColor-contrast: #ffffff;
+    --ion-color-ourColor-contrast-rgb: 255, 255, 255;
+    --ion-color-ourColor-shade: #2f3368;
+    --ion-color-ourColor-tint: #4857ff;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -233,4 +241,12 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+html {
+  /* 
+   * For more information on dynamic font scaling, visit the documentation:
+   * https://ionicframework.com/docs/layout/dynamic-font-scaling
+   */
+  --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
