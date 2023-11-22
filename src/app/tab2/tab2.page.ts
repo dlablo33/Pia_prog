@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FireserviceService } from '../fireservice.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab2Page implements OnInit {
 
-  constructor() { }
-
+  constructor(private fireService: FireserviceService) { }
   ngOnInit() {
+
   }
 
 }
+
